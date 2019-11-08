@@ -1,10 +1,10 @@
 package setlistfm
 
 // Artist search results can be sorted one of two ways
-type ArtistSortType int
+type ArtistSortType string
 const (
-	SortName ArtistSortType = iota
-	Relevance
+	SortName ArtistSortType = "sortName"
+	Relevance ArtistSortType = "relevance"
 )
 
 // FindArtistsRequest encapsulates all possible parameters for an artist search
